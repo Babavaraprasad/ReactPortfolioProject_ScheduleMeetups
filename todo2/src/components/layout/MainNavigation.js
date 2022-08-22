@@ -1,23 +1,23 @@
-import { Link } from 'react-router-dom';
-import classes from './MainNavigation.module.css';
+import { Link } from "react-router-dom";
+import classes from "./MainNavigation.module.css";
 
 function MainNavigation() {
   return (
     <header className={classes.header}>
       <div className={classes.logo}>React Meetups </div>
-    <nav>
+      <nav>
         <ul>
-           <li>
-            <Link to='/'>All Meetups</Link>
-            </li>
-            <li>
-            <Link to='/new_meetup'>New_Meetup</Link>
-            </li>
-            <li>
-            <Link to='/favourites'>Favourites</Link>
-            </li>
+          <li>
+            <Link to="/">All Meetups</Link>
+          </li>
+          <li>
+            <Link to="/new_meetup">New_Meetup</Link>
+          </li>
+          <li>
+            <Link to="/favourites">Favourites</Link>
+          </li>
         </ul>
-    </nav> 
+      </nav>
     </header>
   );
 }
