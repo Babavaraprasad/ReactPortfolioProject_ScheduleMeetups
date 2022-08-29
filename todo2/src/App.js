@@ -9,7 +9,7 @@ with the help of routing we speify
 localhost:3000/products
 localhost:3000/favorites
 */
-import { Routes,Switch } from 'react-router';
+import { Routes,Switch } from 'react-router-dom';
 import AllMeetup from './pages/AllMeetup';
 import Favourite from './pages/Favourite';
 import NewMeetuppage from './pages/NewMeetup';
@@ -21,10 +21,10 @@ function App() {
   <MainNavigation/>
      <Switch>
      <Route path='/' exact={true}><AllMeetup/></Route>
-     <Route path='/new_meetup'>
+     <Route path='/new_meetup' exact={true}>
       <NewMeetuppage/>
      </Route>
-     <Route path='/favourites'>
+     <Route path='/favourites' exact={true}>
       <Favourite/>
      </Route>
      </Switch>
