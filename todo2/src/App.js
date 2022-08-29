@@ -14,11 +14,11 @@ import AllMeetup from './pages/AllMeetup';
 import Favourite from './pages/Favourite';
 import NewMeetuppage from './pages/NewMeetup';
 import MainNavigation from './components/layout/MainNavigation';
+import Layout from './components/layout/Layout';
 
 function App() {
   return (
-    <div>
-  <MainNavigation/>
+    <Layout>
      <Switch>
      <Route path='/' exact={true}><AllMeetup/></Route>
      <Route path='/new_meetup' exact={true}>
@@ -28,8 +28,7 @@ function App() {
       <Favourite/>
      </Route>
      </Switch>
-     
-    </div>
+     </Layout>
   );
 }
 
