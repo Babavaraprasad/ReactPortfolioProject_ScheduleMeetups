@@ -4,11 +4,12 @@
   
   .control {
     margin-bottom: 0.5rem;
+    
   }
   
   .control label {
     display: block;
-    font-weight: bold;
+    font-weight:600;
     margin-bottom: 0.5rem;
   }
   
@@ -23,7 +24,7 @@
   }
   
   .actions {
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: right;
   }
   
@@ -40,6 +41,6 @@
   
   .actions button:hover,
   .actions button:active {
-    background-color: #a50e48;
+    background-color:cadetblue;
     border-color: #a50e48;
   }

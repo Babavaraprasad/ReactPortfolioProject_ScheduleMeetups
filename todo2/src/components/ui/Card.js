@@ -6,8 +6,7 @@ function Card(props)
    <div className={classes.card}>{props.children}</div>
 /*here children will hold the jsx elements under wrapper <Card>....</Card> 
 in the meetupitem.js
-*/
-         
+*/       
     );
 }
 export default Card;
