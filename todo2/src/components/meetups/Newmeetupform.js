@@ -7,7 +7,7 @@ function Newmeetupform() {
    function submitclicked(event)
    {
    event.preventDefault();
-
+   
    } 
 
   return (
